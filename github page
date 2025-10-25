@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Homepage</title>
+  <meta name="description" content="Personal academic homepage" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --page-width: 860px;
+      --text: #1a1a1a;
+      --muted: #5f6368;
+      --accent: #0b6cff;
+      --rule: #e6e6e6;
+      --bg: #fff;
+      --link: #0b6cff;
+    }
+
+    html, body { height: 100%; background: var(--bg); }
+    body {
+      margin: 0 auto; max-width: var(--page-width); padding: 48px 20px 72px;
+      color: var(--text); font: 400 16px/1.65 Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+    h1, h2, h3, h4, h5 { font-family: Merriweather, Georgia, serif; margin: 0 0 .3rem; color: #111; }
+    h1 { font-size: 32px; line-height: 1.2; }
+    h5 { font-size: 16px; letter-spacing: .02em; text-transform: none; color: #222; margin-top: 28px; }
+    p { margin: 0 0 .6rem; }
+    ul { margin: .3rem 0 .9rem 1.25rem; padding: 0; }
+    li { margin: .25rem 0; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .muted { color: var(--muted); }
+    .rule { height: 1px; background: var(--rule); margin: 18px 0 14px; }
+    .top { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; }
+    .nav { display: flex; gap: 14px; flex-wrap: wrap; }
+    .badge { padding: 2px 8px; border-radius: 999px; background: #f3f5f7; border: 1px solid #e8eaed; font-size: 12px; }
+
+    /* Card-like boxes for lists you want to emphasize */
+    .card { border: 1px solid #e8eaed; border-radius: 12px; padding: 14px 16px; background: #fff; }
+
+    /* Small screen tweaks */
+    @media (max-width: 640px) {
+      body { padding: 28px 16px 48px; }
+      h1 { font-size: 26px; }
+    }
+
+    /* Print friendly */
+    @media print {
+      a { color: #000; text-decoration: underline; }
+      .nav { display: none; }
+      body { padding: 0; }
+    }
+  </style>
+</head>
+<body>
+  <!--
+    Quick start (GitHub Pages):
+    1) Create a repo called <your-username>.github.io
+    2) Put this file in the root of that repo as index.html and commit.
+    3) Visit https://<your-username>.github.io
+
+    Customize everything below with your own details.
+  -->
+
+  <header class="top">
+    <div>
+      <h1 id="top">Your Name <span class="muted">/ 骆泳铭</span></h1>
+      <p>Department or Group — <strong>Your University</strong>, City, Country</p>
+      <p class="muted">Email: <a href="mailto:you@university.edu">you@university.edu</a></p>
+      <div class="nav" aria-label="Quick links">
+        <a class="badge" href="#education">Education</a>
+        <a class="badge" href="#positions">Academic Positions</a>
+        <a class="badge" href="#interests">Research interests</a>
+        <a class="badge" href="#publications">Publications</a>
+        <a class="badge" href="#teaching">Teaching</a>
+        <a class="badge" href="#service">Service</a>
+        <a class="badge" href="#cv">CV</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="rule" role="separator"></div>
+
+  <section id="education" aria-labelledby="education-h">
+    <h5 id="education-h">Education</h5>
+    <ul>
+      <li>Ph.D. in Mathematics, Universität Kassel, 2014–2019. <span class="muted">(Supervisor: Your Advisor)</span></li>
+      <li>M.Sc. in Mathematics, Technische Universität München, 2011–2014.</li>
+      <li>B.Sc. in Mathematics, Technische Universität München, 2008–2011.</li>
+    </ul>
+  </section>
+
+  <section id="positions" aria-labelledby="positions-h">
+    <h5 id="positions-h">Academic Positions</h5>
+    <ul>
+      <li>Associate Professor, Your University, 2024.01–present.</li>
+      <li>Senior Lecturer, Your University, 2023.03–2024.12.</li>
+      <li>Postdoctoral Fellow, Tech University Dresden, 2020.04–2023.01. <span class="muted">(Mentor: Your Mentor)</span></li>
+    </ul>
+  </section>
+
+  <section id="interests" aria-labelledby="interests-h">
+    <h5 id="interests-h">Research interests</h5>
+    <ul>
+      <li>Long-time behavior of dispersive equations</li>
+      <li>Variational problems arising in material science</li>
+    </ul>
+  </section>
+
+  <section id="publications" aria-labelledby="publications-h">
+    <h5 id="publications-h">Publications</h5>
+    <p>Full list (PDF): <a href="PubList.pdf">Download</a> · ORCID: <a href="https://orcid.org/0000-0000-0000-0000">0000-0000-0000-0000</a> · Google Scholar: <a href="#">link</a></p>
+
+    <div class="card" style="margin-top:10px">
+      <strong>Selected recent works</strong>
+      <ul>
+        <li>Author, <em>Title of Paper</em>, Journal, Year. <a href="#">doi</a> · <a href="#">arXiv</a></li>
+        <li>Author, <em>Title of Paper</em>, Journal, Year. <a href="#">doi</a> · <a href="#">arXiv</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="teaching" aria-labelledby="teaching-h">
+    <h5 id="teaching-h">Teaching</h5>
+    <ul>
+      <li>Course Name (Term, Year) — short description or link to syllabus</li>
+      <li>Course Name (Term, Year)</li>
+    </ul>
+  </section>
+
+  <section id="service" aria-labelledby="service-h">
+    <h5 id="service-h">Service</h5>
+    <ul>
+      <li>Reviewer for Journal A, Journal B</li>
+      <li>Organizer, Workshop on Something, 2025</li>
+    </ul>
+  </section>
+
+  <section id="cv" aria-labelledby="cv-h">
+    <h5 id="cv-h">CV</h5>
+    <p><a href="CV.pdf">Download CV (PDF)</a></p>
+  </section>
+
+  <div class="rule" role="separator"></div>
+
+  <footer>
+    <p class="muted">Last updated: <span id="last-updated"></span> · Built with plain HTML &amp; a dash of CSS · <a href="#top">Back to top</a></p>
+  </footer>
+
+  <script>
+    // Auto-fill last updated date
+    (function(){
+      const d = new Date(document.lastModified);
+      document.getElementById('last-updated').textContent = d.toLocaleDateString(undefined, {year:'numeric', month:'short', day:'2-digit'});
+    })();
+  </script>
+</body>
+</html>
