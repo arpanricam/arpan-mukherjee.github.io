@@ -3,92 +3,98 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name — Homepage</title>
-  <meta name="description" content="Personal academic homepage" />
+  <title>Dr. Arpan Mukherjee — Homepage</title>
+  <meta name="description" content="Personal academic homepage of Dr. Arpan Mukherjee" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
-:root {
-  --page-width: 860px;
-  --text: #1a1a1a;
-  --muted: #5f6368;
-  --accent: #0b6cff;
-  --rule: #e6e6e6;
-  --bg: #f7f9fb;   /* background color you want */
-  --link: #0b6cff;
-}
+  :root {
+    --page-width: 860px;
+    --text: #1a1a1a;
+    --muted: #5f6368;
+    --accent: #0b6cff;
+    --rule: #e6e6e6;
+    --bg: #f7f9fb;        /* Light bluish background */
+    --link: #0b6cff;
+  }
 
-/* one single block for page background */
-html, body {
-  height: 100%;
-  background: var(--bg);
-  margin: 0;
-}
+  html, body {
+    height: 100%;
+    background-color: var(--bg);
+    margin: 0;
+  }
 
-body {
-  max-width: var(--page-width);
-  padding: 48px 20px 72px;
-  color: var(--text);
-  font: 400 16px/1.65 Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-}
+  body {
+    margin: 0 auto;
+    max-width: var(--page-width);
+    padding: 48px 20px 72px;
+    color: var(--text);
+    font: 400 16px/1.65 Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
 
+  h1, h2, h3, h4, h5 {
+    font-family: Merriweather, Georgia, serif;
+    margin: 0 0 .3rem;
+    color: #111;
+  }
 
-    h1, h2, h3, h4, h5 { font-family: Merriweather, Georgia, serif; margin: 0 0 .3rem; color: #111; }
-    h1 { font-size: 32px; line-height: 1.2; }
-    h5 { font-size: 16px; letter-spacing: .02em; text-transform: none; color: #222; margin-top: 28px; }
-    p { margin: 0 0 .6rem; }
-    ul { margin: .3rem 0 .9rem 1.25rem; padding: 0; }
-    li { margin: .25rem 0; }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .muted { color: var(--muted); }
-    .rule { height: 1px; background: var(--rule); margin: 18px 0 14px; }
-    .top { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; }
-    .nav { display: flex; gap: 14px; flex-wrap: wrap; }
-    .badge { padding: 2px 8px; border-radius: 999px; background: #f3f5f7; border: 1px solid #e8eaed; font-size: 12px; }
+  h1 { font-size: 32px; line-height: 1.2; }
+  h5 { font-size: 16px; letter-spacing: .02em; color: #222; margin-top: 28px; }
+  p { margin: 0 0 .6rem; }
+  ul { margin: .3rem 0 .9rem 1.25rem; padding: 0; }
+  li { margin: .25rem 0; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
 
-    /* Card-like boxes for lists you want to emphasize */
-    .card { border: 1px solid #e8eaed; border-radius: 12px; padding: 14px 16px; background: #fff; }
+  .muted { color: var(--muted); }
+  .rule { height: 1px; background: var(--rule); margin: 18px 0 14px; }
+  .top { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; }
+  .nav { display: flex; gap: 14px; flex-wrap: wrap; }
+  .badge {
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.6);
+    border: 1px solid #e8eaed;
+    font-size: 12px;
+  }
 
-    /* Small screen tweaks */
-    @media (max-width: 640px) {
-      body { padding: 28px 16px 48px; }
-      h1 { font-size: 26px; }
-    }
+  .card {
+    border: 1px solid #e8eaed;
+    border-radius: 12px;
+    padding: 14px 16px;
+    background: rgba(255, 255, 255, 0.9);
+  }
 
-    /* Print friendly */
-    @media print {
-      a { color: #000; text-decoration: underline; }
-      .nav { display: none; }
-      body { padding: 0; }
-    }
-    .journal {
-  color: #6a1b9a;        /* change this to your preferred color */
-  font-weight: 600;      /* makes it slightly bold */
-}
+  .journal {
+    color: #6a1b9a;
+    font-weight: 600;
+  }
 
+  @media (max-width: 640px) {
+    body { padding: 28px 16px 48px; }
+    h1 { font-size: 26px; }
+  }
+
+  @media print {
+    a { color: #000; text-decoration: underline; }
+    .nav { display: none; }
+    body { padding: 0; }
+  }
   </style>
 </head>
+
 <body>
-  <!--
-    Quick start (GitHub Pages):
-    1) Create a repo called <your-username>.github.io
-    2) Put this file in the root of that repo as index.html and commit.
-    3) Visit https://<your-username>.github.io
-
-    Customize everything below with your own details.
-  -->
-
   <header class="top">
     <div>
-      <h1 id="top">Dr. Arpan Mukherjee <span class="muted"></span></h1>
+      <h1 id="top">Dr. Arpan Mukherjee</h1>
       <p>Joint Research Center of Applied Mathematics — <strong>Shenzhen MSU-BIT University</strong>, Shenzhen, China</p>
       <p class="muted">Email: <a href="mailto:arpan.mukherjee@smbu.edu.cn">arpan.mukherjee@smbu.edu.cn</a></p>
       <div class="nav" aria-label="Quick links">
         <a class="badge" href="#education">Education</a>
         <a class="badge" href="#positions">Academic Positions</a>
-        <a class="badge" href="#interests">Research interests</a>
+        <a class="badge" href="#interests">Research Interests</a>
         <a class="badge" href="#publications">Publications</a>
         <a class="badge" href="#teaching">Teaching</a>
         <a class="badge" href="#service">Service</a>
@@ -99,28 +105,28 @@ body {
 
   <div class="rule" role="separator"></div>
 
-  <section id="education" aria-labelledby="education-h">
-    <h5 id="education-h">Education</h5>
+  <section id="education">
+    <h5>Education</h5>
     <ul>
-      <li>Ph.D. in Mathematics, Johannes Kepler Universität Linz, Austria, 2021–2023. <span class="muted">(Supervisor: Prof. Dr. Mourad Sini and Prof. Dr. Haibing Wang)</span></li>
-      <li>M.Tech. in Industrial Mathematics and Scientific Computing, Indian Institute of Technology Madras, 2018–2020.</li>
+      <li>Ph.D. in Mathematics, Johannes Kepler Universität Linz, Austria, 2021–2023. <span class="muted">(Supervisors: Prof. Dr. Mourad Sini and Prof. Dr. Haibing Wang)</span></li>
+      <li>M.Tech. in Industrial Mathematics and Scientific Computing, IIT Madras, 2018–2020.</li>
       <li>M.Sc. in Mathematics, Pondicherry University, 2015–2017.</li>
       <li>B.Sc. in Mathematics, The University of Burdwan, 2011–2015.</li>
     </ul>
   </section>
 
-  <section id="positions" aria-labelledby="positions-h">
-    <h5 id="positions-h">Academic Positions</h5>
+  <section id="positions">
+    <h5>Academic Positions</h5>
     <ul>
       <li>Lecturer (Tenure-Track Assistant Professor), Shenzhen MSU-BIT University, 2024.09–present.</li>
-      <li>Post. Doc. Research Scientist, Johann Radon Institute (RICAM), Austrian Academy of Sciences, Austria, 2023.12–2024.07.<span class="muted">(Mentor: Prof. Dr. Mourad Sini)</span></li>
-      <li>Doc. Research Scientist, Johann Radon Institute (RICAM), Austrian Academy of Sciences, Austria, 2020.08–2023.11.<span class="muted">(Mentor: Prof. Dr. Mourad Sini)</span></li>
-      <li>Visiting Researcher, Department of Mathematics & Steinbuch Center for Computing (SCC), Karlsruhe Institute of Technology (KIT), Germany, 2019.09–2020.03.<span class="muted">(Mentor: Prof. Dr. Sundar S and Prof. Dr. Martin Frank)</span></li>
+      <li>Postdoctoral Research Scientist, Johann Radon Institute (RICAM), Austrian Academy of Sciences, 2023.12–2024.07. <span class="muted">(Mentor: Prof. Dr. Mourad Sini)</span></li>
+      <li>Doctoral Research Scientist, Johann Radon Institute (RICAM), Austrian Academy of Sciences, 2020.08–2023.11. <span class="muted">(Mentor: Prof. Dr. Mourad Sini)</span></li>
+      <li>Visiting Researcher, Karlsruhe Institute of Technology (KIT), Germany, 2019.09–2020.03. <span class="muted">(Mentors: Prof. Dr. Sundar S and Prof. Dr. Martin Frank)</span></li>
     </ul>
   </section>
 
-  <section id="interests" aria-labelledby="interests-h">
-    <h5 id="interests-h">Research interests</h5>
+  <section id="interests">
+    <h5>Research Interests</h5>
     <ul>
       <li>Analysis of Partial Differential Equations</li>
       <li>Mathematical Materials Science</li>
@@ -128,83 +134,76 @@ body {
     </ul>
   </section>
 
-  <section id="publications" aria-labelledby="publications-h">
-    <h5 id="publications-h">Publications</h5>
-    <p>Full list (PDF): <a href="PubList.pdf">Download</a> · ORCID: <a href="https://orcid.org/0000-0000-0000-0000">0000-0000-0000-0000</a> · Google Scholar: <a href="#">link</a></p>
+  <section id="publications">
+    <h5>Publications</h5>
+    <p>Full list (PDF): <a href="PubList.pdf">Download</a> ·
+    Google Scholar: <a href="https://scholar.google.com/citations?user=EcAIWJ4AAAAJ&hl=en" target="_blank">View Profile</a></p>
 
-<div class="card" style="margin-top:10px">
-  <strong>Selected recent works</strong>
-  <ul>
-    <li>
-      X. Cao, A. Mukherjee, and M. Sini,
-      <em>Effective Medium Theory for Heat Generation Using Plasmonics: A Parabolic Transmission Problem Driven by the Maxwell System</em>,
-      <span class="journal">To Appear in Mathematische Annalen</span>, 2025
-      <a href="#">doi</a> · <a href="#">arXiv</a>
-    </li>
-    <li>
-      A. Mukherjee and M. Sini,
-      <em>Dispersive Effective Model in the Time-Domain for Acoustic Waves Propagating in Bubbly Media</em>,
-      <span class="journal">To Appear in SIAM Journal on Applied Mathematics</span>, 2025
-      <a href="#">doi</a> · <a href="#">arXiv</a>
-    </li>
-    <li>
-      A. Mukherjee and M. Sini,
-      <em>Acoustic Cavitation using Resonating Micro-Bubbles. Analysis in the Time-Domain</em>,
-      <span class="journal">SIAM Journal on Mathematical Analysis</span>, vol. 55, no. 5, pp. 5575–5616, 2023.
-      <a href="#">doi</a> · <a href="#">arXiv</a>
-    </li>
-        <li>
-      A. Mukherjee and M. Sini,
-      <em>Heat Generation Using Lorentzian Nanoparticles. The Full Maxwell System</em>,
-      <span class="journal">SIAM Journal on Applied Mathematics</span>, vol. 84, no. 1, pp. 285–315, 2024.
-      <a href="#">doi</a> · <a href="#">arXiv</a>
-    </li>
-            <li>
-      A. Mukherjee and M. Sini,
-      <em>Time-Dependent Acoustic Waves Generated by Multiple Resonant Bubbles: Application to Acoustic Cavitation</em>,
-      <span class="journal">Journal of Evolution Equations</span>, vol. 24, no. 90, 2024.
-      <a href="#">doi</a> · <a href="#">arXiv</a>
-    </li>
-  </ul>
-</div>
+    <div class="card" style="margin-top:10px">
+      <strong>Selected Recent Works</strong>
+      <ul>
+        <li>X. Cao, A. Mukherjee, and M. Sini,
+          <em>Effective Medium Theory for Heat Generation Using Plasmonics: A Parabolic Transmission Problem Driven by the Maxwell System</em>,
+          <span class="journal">To appear in Mathematische Annalen</span>, 2025.
+          <a href="#">doi</a> · <a href="#">arXiv</a>
+        </li>
+        <li>A. Mukherjee and M. Sini,
+          <em>Dispersive Effective Model in the Time-Domain for Acoustic Waves Propagating in Bubbly Media</em>,
+          <span class="journal">To appear in SIAM Journal on Applied Mathematics</span>, 2025.
+          <a href="#">doi</a> · <a href="#">arXiv</a>
+        </li>
+        <li>A. Mukherjee and M. Sini,
+          <em>Acoustic Cavitation using Resonating Micro-Bubbles. Analysis in the Time-Domain</em>,
+          <span class="journal">SIAM Journal on Mathematical Analysis</span>, vol. 55, no. 5, pp. 5575–5616, 2023.
+          <a href="#">doi</a> · <a href="#">arXiv</a>
+        </li>
+        <li>A. Mukherjee and M. Sini,
+          <em>Heat Generation Using Lorentzian Nanoparticles. The Full Maxwell System</em>,
+          <span class="journal">SIAM Journal on Applied Mathematics</span>, vol. 84, no. 1, pp. 285–315, 2024.
+          <a href="#">doi</a> · <a href="#">arXiv</a>
+        </li>
+        <li>A. Mukherjee and M. Sini,
+          <em>Time-Dependent Acoustic Waves Generated by Multiple Resonant Bubbles: Application to Acoustic Cavitation</em>,
+          <span class="journal">Journal of Evolution Equations</span>, vol. 24, no. 90, 2024.
+          <a href="#">doi</a> · <a href="#">arXiv</a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-
-  <section id="teaching" aria-labelledby="teaching-h">
-    <h5 id="teaching-h">Teaching</h5>
+  <section id="teaching">
+    <h5>Teaching</h5>
     <ul>
-      <li>(Winter, 2025) -- 1. Probability Theory and Mathematical Statistics 2. Linear Algebra 3. Mathematics for Biological Sciences
-(Calculus, Linear Algebra & Discrete Mathematics)</li>
-      <li>Course Name (Summer, 2025)-- 1. Introduction to Mathematical Theory of Electromagnetism</li>
+      <li>(Winter, 2025) — Probability Theory and Mathematical Statistics, Linear Algebra, Mathematics for Biological Sciences (Calculus, Linear Algebra & Discrete Mathematics)</li>
+      <li>(Summer, 2025) — Introduction to Mathematical Theory of Electromagnetism</li>
     </ul>
   </section>
 
-
-
-  <section id="service" aria-labelledby="service-h">
-    <h5 id="service-h">Service</h5>
+  <section id="service">
+    <h5>Service</h5>
     <ul>
-      <li>Reviewer for Mathematical Models and Methods in Applied Sciences (M3AS)
-</li>
-      <li>Co-organizer, Minisymposium: "Inverse Problems for Evolution Equations", 12th Applied Inverse Problem Conference (AIP2025), Rio de Janeiro, Brazil, July 28-August 1, 2025.</li>
+      <li>Reviewer for <em>Mathematical Models and Methods in Applied Sciences</em>.</li>
+      <li>Co-organizer, Minisymposium: “Inverse Problems for Evolution Equations”, 12th Applied Inverse Problem Conference (AIP2025), Rio de Janeiro, Brazil, July 28–August 1, 2025.</li>
     </ul>
   </section>
 
-  <section id="cv" aria-labelledby="cv-h">
-    <h5 id="cv-h">CV</h5>
-    <p><a href="CV Arpan.pdf">Download CV (PDF)</a></p>
+  <section id="cv">
+    <h5>CV</h5>
+    <p><a href="CV_Arpan.pdf" target="_blank">Download CV (PDF)</a></p>
   </section>
 
   <div class="rule" role="separator"></div>
 
   <footer>
-    <p class="muted">Last updated: <span id="last-updated"></span> · Built with plain HTML &amp; a dash of CSS · <a href="#top">Back to top</a></p>
+    <p class="muted">Last updated: <span id="last-updated"></span> · Built with plain HTML &amp; CSS · <a href="#top">Back to top</a></p>
   </footer>
 
   <script>
     // Auto-fill last updated date
     (function(){
       const d = new Date(document.lastModified);
-      document.getElementById('last-updated').textContent = d.toLocaleDateString(undefined, {year:'numeric', month:'short', day:'2-digit'});
+      document.getElementById('last-updated').textContent =
+        d.toLocaleDateString(undefined, {year:'numeric', month:'short', day:'2-digit'});
     })();
   </script>
 </body>
