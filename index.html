@@ -15,18 +15,18 @@
   --muted: #5f6368;
   --accent: #0b6cff;
   --rule: #e6e6e6;
-  --bg: #f7f9fb;            /* <-- your new background color */
+  --bg: #f7f9fb;   /* background color you want */
   --link: #0b6cff;
 }
 
-/* one and only one html,body block */
+/* one single block for page background */
 html, body {
   height: 100%;
   background: var(--bg);
+  margin: 0;
 }
 
 body {
-  margin: 0 auto;
   max-width: var(--page-width);
   padding: 48px 20px 72px;
   color: var(--text);
