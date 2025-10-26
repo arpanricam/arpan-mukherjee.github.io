@@ -15,8 +15,9 @@
   --muted: #5f6368;
   --accent: #0b6cff;
   --rule: #e6e6e6;
-  --bg: #f7f9fb;            /* <-- your new background color */
+  --bg: #f7f9fb;
   --link: #0b6cff;
+  --pub-bg: #f0f7ff;  /* New variable for publications background */
 }
 
 /* one and only one html,body block */
@@ -32,7 +33,6 @@ body {
   color: var(--text);
   font: 400 16px/1.65 Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
-
 
     h1, h2, h3, h4, h5 { font-family: Merriweather, Georgia, serif; margin: 0 0 .3rem; color: #111; }
     h1 { font-size: 32px; line-height: 1.2; }
@@ -51,10 +51,20 @@ body {
     /* Card-like boxes for lists you want to emphasize */
     .card { border: 1px solid #e8eaed; border-radius: 12px; padding: 14px 16px; background: #fff; }
 
+    /* Publications section with different background */
+    #publications {
+      background-color: var(--pub-bg);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-left: 4px solid var(--accent);
+    }
+
     /* Small screen tweaks */
     @media (max-width: 640px) {
       body { padding: 28px 16px 48px; }
       h1 { font-size: 26px; }
+      #publications { padding: 12px 16px; }
     }
 
     /* Print friendly */
@@ -62,6 +72,7 @@ body {
       a { color: #000; text-decoration: underline; }
       .nav { display: none; }
       body { padding: 0; }
+      #publications { background: none; border-left: none; }
     }
     .journal {
   color: #6a1b9a;        /* change this to your preferred color */
